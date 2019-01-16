@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta author="Maldifassi Filippo"/>
+		<title>Esercizio 10 parte 3</title>
+		<style>
+			article {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				animation-duration: 4s;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			div {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left:0px;
+				padding: 0px;
+				border: 0px;
+				width: 400px;
+				max-width: 400px;
+				height: 400px;
+			}
+			
+			.a:hover {animation-name: a;}
+			.b:hover {animation-name: b;}
+			.c:hover {animation-name: c;}
+			.d:hover {animation-name: d;}
+			.e:hover {animation-name: e;}
+			.f:hover {animation-name: f;}
+			.g:hover {animation-name: g;}
+			.h:hover {animation-name: h;}
+			.i:hover {animation-name: i;}
+			.l:hover {animation-name: l;}
+			
+			@keyframes a {
+				0%   {background-color: red;}
+				25%  {background-color: yellow;}
+				50%  {background-color: blue;}
+				75%  {background-color: green;}
+				100% {background-color: red;}
+			}
+			@keyframes b {
+				0%   {background-color: red;    margin-top:   0px; margin-left:   0px;}
+				25%  {background-color: yellow; margin-top:   0px; margin-left: 200px;}
+				50%  {background-color: blue;   margin-top: 200px; margin-left: 200px;}
+				75%  {background-color: green;  margin-top: 200px; margin-left:   0px;}
+				100% {background-color: red;    margin-top:   0px; margin-left:   0px;}
+			}
+		</style>
+	</head>
+	<body>
+		<article class="a"></article>
+		<div><article class="b"></article></div>
+		<div><article class="b" style="animation-delay: 5s; animation-duration: 5s;"></article></div>
+		<div><article class="b" style="animation-timing-function: ease-in-out;"></article></div>
+		<article class="c"></article>
+		<article class="d"></article>
+		<article class="e"></article>
+		<article class="f"></article>
+		<article class="g"></article>
+		<article class="h"></article>
+	</body>
+</html>

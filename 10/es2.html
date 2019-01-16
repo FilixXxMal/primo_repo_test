@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta author="Maldifassi Filippo"/>
+		<title>Esercizio 10 parte 2</title>
+		<style>
+			article {
+				width: 200px;
+				height: 200px;
+				border: 1px solid rgb(192, 0, 0);
+				background-color: red;
+			}
+			
+			.dmc:hover {
+				width: 400px;
+				height: 400px;
+			}
+			.bgc:hover {
+				background-color: yellow;
+			}
+			.psc:hover {
+				margin-left: 200px;
+			}
+			.mgc:hover {
+				margin-top: 200px;
+				margin-bottom: 200px;
+			}
+			.mlc:hover {
+				width: 400px;
+				height: 400px;
+				background-color: yellow;
+				border-color: rgb(192, 192, 0);
+				margin-left: 200px;
+				margin-top: 200px;
+				margin-bottom: 200px;
+			}
+			.rdc:hover {
+				transform: rotate(90deg)
+			}
+		</style>
+	</head>
+	<body>
+		<article class="dmc" style="transition:width 0.5s, height 0.5s;"></article>
+		<article class="bgc" style="transition:background-color 0.5s;"></article>
+		<article class="psc" style="transition:margin-left 0.5s;"></article>
+		<article class="mgc" style="transition:margin-top 0.5s, margin-bottom 0.5s;"></article>
+		<article class="mlc" style="transition:border-color 0.5s, width 0.5s, height 0.5s, background-color 0.5s, margin-left 0.5s, margin-top 0.5s, margin-bottom 0.5s;"></article>
+		<article class="rdc" style="transition:transform 0.5s;"></article>
+	</body>
+</html>
